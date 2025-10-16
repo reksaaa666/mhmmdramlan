@@ -20,7 +20,7 @@ window.addEventListener('scroll', revealOnScroll);
 revealOnScroll();
 
 // Typewriter effect
-const nameText = "Muhammad Ramlan Fahmi Taftazanie";
+const nameText = "Muhammad Ramlan";
 let index = 0;
 const nameEl = document.getElementById('name');
 function typeWriter() {
@@ -31,10 +31,3 @@ function typeWriter() {
   }
 }
 typeWriter();
-
-// Dark mode toggle
-const toggleBtn = document.getElementById('darkModeToggle');
-toggleBtn.addEventListener('click', () => {
-  document.body.classList.toggle('dark-mode');
-  toggleBtn.textContent = document.body.classList.contains('dark-mode') ? '☀️ Light Mode' : '🌙 Dark Mode';
-});
