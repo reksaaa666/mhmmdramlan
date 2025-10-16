@@ -7,10 +7,16 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <!-- HEADER -->
   <header>
-    <h1>Muhammad Ramlan Fahmi Taftazanie</h1>
-    <p>Mahasiswa Teknik Informatika | Mechanic & Gamer</p>
+    <img src="profile.jpg" alt="Yam-Yam Profile" class="profile-img">
+    <h1 id="name"></h1>
+    <p>Mahasiswa Teknik Informatika | Teknologi & Mekanik</p>
+    
+    <!-- Dark Mode Toggle -->
+    <button id="darkModeToggle" class="btn">🌙 Dark Mode</button>
+    
     <a href="#contact" class="btn">Hubungi Saya</a>
   </header>
 
@@ -19,9 +25,8 @@
     <h2>Tentang Saya</h2>
     <p>
       Halo! Saya <b>Yam-Yam</b>, seorang mahasiswa Teknik Informatika dari Tasikmalaya.
-      Saya memiliki keahlian dalam memperbaiki motor, komputer, dan HP. 
-      Selain itu saya juga aktif di dunia gaming seperti GTA (JGRP), Mobile Legends, dan Minecraft.
-      Saya suka mempelajari teknologi baru dan senang berbagi pengalaman.
+      Saya memiliki keahlian dalam memperbaiki motor, komputer, dan HP.  
+      Saya tertarik pada teknologi baru dan senang belajar serta berbagi pengalaman.
     </p>
   </section>
 
@@ -32,7 +37,7 @@
       <li>⚙️ Mekanik & Reparasi Elektronik</li>
       <li>💻 Pemrograman Dasar (HTML, CSS, JavaScript)</li>
       <li>🧠 Jaringan & Komputer</li>
-      <li>🎮 Game Development & Roleplay Server (SAMP, Minecraft)</li>
+      <li>🔧 Perbaikan dan Perawatan Perangkat</li>
     </ul>
   </section>
 
@@ -41,16 +46,19 @@
     <h2>Portofolio</h2>
     <div class="projects">
       <div class="card">
-        <h3>🔧 Mechanic Role — JGRP</h3>
-        <p>Bekerja sebagai mekanik di server Jogjagame Reality Project, memperbaiki kendaraan pemain dengan sistem roleplay realistis.</p>
-      </div>
-      <div class="card">
         <h3>💻 Website Profil</h3>
-        <p>Website pribadi ini dibuat menggunakan HTML, CSS, dan GitHub Pages sebagai hosting gratis.</p>
+        <img src="website.jpg" alt="Website Profil" class="portfolio-img">
+        <p>Membuat website pribadi menggunakan HTML, CSS, dan GitHub Pages sebagai hosting gratis.</p>
       </div>
       <div class="card">
-        <h3>🌾 Farming System</h3>
-        <p>Proyek kecil simulasi sistem pertanian di Minecraft, menggabungkan redstone dan automation logic.</p>
+        <h3>⚙️ Proyek Mekanik</h3>
+        <img src="mechanic.jpg" alt="Proyek Mekanik" class="portfolio-img">
+        <p>Mengelola dan memperbaiki kendaraan serta perangkat mekanik secara profesional.</p>
+      </div>
+      <div class="card">
+        <h3>🖥️ Sistem Komputer</h3>
+        <img src="computer.jpg" alt="Sistem Komputer" class="portfolio-img">
+        <p>Membangun, memperbaiki, dan merawat komputer serta jaringan komputer sederhana.</p>
       </div>
     </div>
   </section>
@@ -64,6 +72,14 @@
       <li>💬 <a href="https://wa.me/628xxxxx" target="_blank">WhatsApp</a></li>
       <li>🐙 <a href="https://github.com/yam-yam17" target="_blank">GitHub</a></li>
     </ul>
+
+    <!-- Form Kontak -->
+    <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="text" name="name" placeholder="Nama Kamu" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="message" placeholder="Pesan..." required></textarea>
+      <button type="submit">Kirim Pesan</button>
+    </form>
   </section>
 
   <!-- FOOTER -->
