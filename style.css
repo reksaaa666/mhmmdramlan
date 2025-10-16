@@ -78,6 +78,11 @@ ul {
   border-radius: 8px;
 }
 
+/* Teks justify untuk About Saya */
+#about p {
+  text-align: justify;
+}
+
 /* PORTFOLIO */
 .projects {
   display: grid;
@@ -95,11 +100,6 @@ ul {
 .card h3 {
   color: #0074d9;
   margin-bottom: 10px;
-}
-
-#about p,
-#portfolio .card p {
-  text-align: justify; /* justify text */
 }
 
 /* CONTACT */
