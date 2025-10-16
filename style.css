@@ -37,6 +37,7 @@ header p {
   text-decoration: none;
   border-radius: 25px;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -96,6 +97,11 @@ ul {
   margin-bottom: 10px;
 }
 
+#about p,
+#portfolio .card p {
+  text-align: justify; /* justify text */
+}
+
 /* CONTACT FORM */
 form {
   display: flex;
@@ -142,10 +148,3 @@ footer {
   padding: 20px;
   margin-top: 40px;
 }
-
-/* Teks justify untuk About dan Portfolio */
-#about p,
-#portfolio .card p {
-  text-align: justify;
-}
-
