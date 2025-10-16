@@ -102,41 +102,17 @@ ul {
   text-align: justify; /* justify text */
 }
 
-/* CONTACT FORM */
-form {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
+/* CONTACT */
+#contact ul li {
+  margin: 8px 0;
 }
 
-form input, form textarea {
-  padding: 10px;
-  margin: 5px 0;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-}
-
-form button {
-  padding: 10px;
-  margin-top: 10px;
-  border: none;
-  background: #0074d9;
-  color: white;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-form button:hover {
-  background: #005fbf;
-}
-
-/* LINKS */
-a {
+#contact a {
   color: #0074d9;
   text-decoration: none;
 }
 
-a:hover {
+#contact a:hover {
   text-decoration: underline;
 }
 
