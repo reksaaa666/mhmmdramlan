@@ -11,6 +11,7 @@ body {
   background: #f8f9fa;
 }
 
+/* HEADER */
 header {
   background: linear-gradient(135deg, #001f3f, #0074d9);
   color: white;
@@ -27,15 +28,25 @@ header p {
   font-size: 1.1em;
 }
 
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 4px solid white;
+}
+
 .btn {
   display: inline-block;
-  margin-top: 20px;
+  margin: 10px 5px 0 5px;
   padding: 10px 20px;
   background: white;
   color: #0074d9;
   text-decoration: none;
   border-radius: 25px;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -43,6 +54,7 @@ header p {
   color: white;
 }
 
+/* SECTIONS */
 section {
   padding: 50px 20px;
   max-width: 900px;
@@ -75,6 +87,7 @@ ul {
   border-radius: 8px;
 }
 
+/* PORTFOLIO */
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -93,10 +106,41 @@ ul {
   margin-bottom: 10px;
 }
 
-#contact ul li {
+.portfolio-img {
+  width: 100%;
+  border-radius: 10px;
   margin: 10px 0;
 }
 
+/* CONTACT FORM */
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+form input, form textarea {
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  background: #0074d9;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #005fbf;
+}
+
+/* LINKS */
 a {
   color: #0074d9;
   text-decoration: none;
@@ -106,10 +150,31 @@ a:hover {
   text-decoration: underline;
 }
 
+/* FOOTER */
 footer {
   background: #001f3f;
   color: white;
   text-align: center;
   padding: 20px;
   margin-top: 40px;
+}
+
+/* DARK MODE */
+body.dark-mode {
+  background: #121212;
+  color: #f0f0f0;
+}
+
+body.dark-mode header {
+  background: #0d1b2a;
+}
+
+body.dark-mode .card {
+  background: #1e1e1e;
+  box-shadow: 0 4px 6px rgba(255,255,255,0.1);
+}
+
+body.dark-mode .btn {
+  background: #f0f0f0;
+  color: #0d6efd;
 }
