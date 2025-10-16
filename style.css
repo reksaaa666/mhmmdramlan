@@ -28,15 +28,6 @@ header p {
   font-size: 1.1em;
 }
 
-.profile-img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 20px;
-  border: 4px solid white;
-}
-
 .btn {
   display: inline-block;
   margin: 10px 5px 0 5px;
@@ -46,7 +37,6 @@ header p {
   text-decoration: none;
   border-radius: 25px;
   transition: 0.3s;
-  cursor: pointer;
 }
 
 .btn:hover {
@@ -106,12 +96,6 @@ ul {
   margin-bottom: 10px;
 }
 
-.portfolio-img {
-  width: 100%;
-  border-radius: 10px;
-  margin: 10px 0;
-}
-
 /* CONTACT FORM */
 form {
   display: flex;
@@ -157,24 +141,4 @@ footer {
   text-align: center;
   padding: 20px;
   margin-top: 40px;
-}
-
-/* DARK MODE */
-body.dark-mode {
-  background: #121212;
-  color: #f0f0f0;
-}
-
-body.dark-mode header {
-  background: #0d1b2a;
-}
-
-body.dark-mode .card {
-  background: #1e1e1e;
-  box-shadow: 0 4px 6px rgba(255,255,255,0.1);
-}
-
-body.dark-mode .btn {
-  background: #f0f0f0;
-  color: #0d6efd;
 }
